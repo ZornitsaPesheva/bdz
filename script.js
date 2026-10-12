@@ -8,6 +8,8 @@ const panel = document.querySelector("#departure-panel");
 const tabs = Array.from(document.querySelectorAll(".station-tab"));
 let requestController;
 
+alert("Зареден е новият script.js");
+
 async function loadTrains(station) {
   requestController?.abort();
   requestController = new AbortController();
@@ -88,9 +90,6 @@ function selectStation(tab) {
 
 tabs.forEach((tab, index) => {
   tab.addEventListener("click", () => {
-    if (tab.dataset.stationName === "Шумен") {
-      alert("Натиснат е Шумен");
-    }
     selectStation(tab);
   });
   tab.addEventListener("keydown", event => {
