@@ -8,7 +8,6 @@ const panel = document.querySelector("#departure-panel");
 const tabs = Array.from(document.querySelectorAll(".station-tab"));
 let requestController;
 
-alert("Зареден е новият script.js");
 
 async function loadTrains(station) {
   requestController?.abort();
