@@ -87,7 +87,12 @@ function selectStation(tab) {
 }
 
 tabs.forEach((tab, index) => {
-  tab.addEventListener("click", () => selectStation(tab));
+  tab.addEventListener("click", () => {
+    if (tab.dataset.stationName === "Шумен") {
+      alert("Натиснат е Шумен");
+    }
+    selectStation(tab);
+  });
   tab.addEventListener("keydown", event => {
     let nextIndex;
     if (event.key === "ArrowRight") {
