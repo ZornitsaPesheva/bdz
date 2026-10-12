@@ -8,9 +8,33 @@
 </head>
 <body>
   <main>
-    <h1>Следващи влакове през Провадия</h1>
-    <p id="status">Зареждане…</p>
-    <ul id="trains"></ul>
+    <div class="station-tabs" role="tablist" aria-label="Избор на гара">
+      <button
+        id="station-shumen"
+        class="station-tab"
+        type="button"
+        role="tab"
+        aria-selected="false"
+        aria-controls="departure-panel"
+        data-station-id="15"
+        data-station-name="Шумен"
+      >Шумен</button>
+      <button
+        id="station-provadiya"
+        class="station-tab"
+        type="button"
+        role="tab"
+        aria-selected="true"
+        aria-controls="departure-panel"
+        data-station-id="63"
+        data-station-name="Провадия"
+      >Провадия</button>
+    </div>
+    <section id="departure-panel" role="tabpanel" aria-labelledby="station-provadiya">
+      <h1 id="heading">Следващи влакове през Провадия</h1>
+      <p id="status">Зареждане…</p>
+      <ul id="trains"></ul>
+    </section>
   </main>
 
   <script src="script.js"></script>
