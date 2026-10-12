@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+}
+
+main {
+  max-width: 600px;
+  margin: auto;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 16px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 8px #00000012;
+}
+
+.time {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.delay {
+  color: #b42318;
+}
